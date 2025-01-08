@@ -1,0 +1,13 @@
+nohup python train.py --epochs 300 \
+                      --batch_size 16 \
+                      --lr 0.0002 \
+                      --latent_dim 4 \
+                      --img_size 32 \
+                      --channels 3 \
+                      --sample_interval 50 \
+                      --b1 0.5 \
+                      --b2 0.999 \
+                      --k 1000 \
+                      --model NNHVM_CNN \
+                      --save_model_path /home/wangchai/zhw/Generative-Model/ckpt/NNHVM_CNN.pth \
+                      --dataset_path /home/wangchai/zhw/Generative-Model/dataset > train_NNHVM_CNN.log 2>&1 &

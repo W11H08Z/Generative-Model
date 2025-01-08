@@ -1,0 +1,13 @@
+nohup python train.py --epochs 300 \
+                      --batch_size 256 \
+                      --lr 0.0002 \
+                      --latent_dim 100 \
+                      --img_size 32 \
+                      --channels 3 \
+                      --sample_interval 1000 \
+                      --b1 0.5 \
+                      --b2 0.999 \
+                      --k 100 \
+                      --model VAE \
+                      --save_model_path /home/wangchai/zhw/Generative-Model/ckpt/VAE.pth \
+                      --dataset_path /home/wangchai/zhw/Generative-Model/dataset > train_VAE.log 2>&1 &
